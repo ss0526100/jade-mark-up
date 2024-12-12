@@ -1,0 +1,102 @@
+body {
+  font-family: 'Nanum Gothic',
+    sans-serif;
+  font-size: 16px;
+  color    : red;
+}
+
+img {
+  display: block;
+}
+
+header {
+  background-color: royalblue;
+  height          : 75px;
+}
+
+header .inner {
+  position        : relative;
+  width           : 1100px;
+  height          : 100%;
+  background-color: orange;
+  margin          : 0 auto;
+}
+
+header .logo {
+  position: absolute;
+  height  : 50px;
+  width   : 50px;
+  top     : 0;
+  bottom  : 0;
+  left    : 0;
+  right   : 0;
+  margin  : auto;
+  display : none;
+}
+
+header .logo img {
+  height: 100%;
+  width : 100%;
+}
+
+.header-nav {
+  position: absolute;
+  right   : 0px;
+  margin  : 0 20px 0 0;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav ul li {
+  position  : relative;
+  box-sizing: border-box;
+  display   : flex;
+
+}
+
+.header-nav ul li::before {
+  content         : "";
+  position        : relative;
+  display         : block;
+  top             : 0;
+  bottom          : 0;
+  width           : 1px;
+  height          : 11px;
+  margin          : auto 2px;
+  background-color: white;
+}
+
+.header-nav ul li:first-child:before {
+  display: none;
+}
+
+
+.header-nav ul li a {
+  color          : black;
+  text-decoration: none;
+  font-size      : 12px;
+  margin         : 2px 2px;
+  padding        : 3px 18px;
+
+}
+
+.header-nav ul li a:hover {
+  color           : white;
+  background-color: #0000003f;
+}
+
+
+
+.header-search-box {
+  display       : flex;
+  flex-direction: row;
+  gap           : 10px;
+  position      : absolute;
+  right         : 0px;
+  margin        : 30px 20px 0 0;
+  height        : 20px;
+}
+
+.header-search-box {}
